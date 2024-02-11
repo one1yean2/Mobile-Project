@@ -257,7 +257,9 @@ class _LedMatrixState extends State<LedMatrix> {
         margin: const EdgeInsets.all(10.0),
         child: Column(
           children: [
+            Expanded(child: Container()),
             _increase(),
+            Expanded(child: Container()),
             Row(
               children: [
                 Expanded(child: Container()),
@@ -282,7 +284,9 @@ class _LedMatrixState extends State<LedMatrix> {
                 Expanded(child: Container()),
               ],
             ),
+            Expanded(child: Container()),
             _decrease(),
+            Expanded(child: Container()),
           ],
         ),
       ),
