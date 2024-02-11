@@ -120,17 +120,17 @@ class _LedMatrixState extends State<LedMatrix> {
       return Container(
         width: 20,
         height: 20,
-        margin: const EdgeInsets.all(1),
+        margin: const EdgeInsets.all(2),
         decoration: BoxDecoration(
           shape: BoxShape.circle,
-          color: Color.fromARGB(255, 79, 239, 85),
+          color: Color.fromARGB(255, 196, 236, 21),
         ),
       );
     } else {
       return Container(
         width: 20,
         height: 20,
-        margin: const EdgeInsets.all(1),
+        margin: const EdgeInsets.all(2),
         decoration: BoxDecoration(
           shape: BoxShape.circle,
           color: Color.fromARGB(255, 62, 62, 62),
@@ -205,7 +205,7 @@ class _LedMatrixState extends State<LedMatrix> {
               width: 100,
               child: Icon(
                 Icons.arrow_drop_up_sharp,
-                size: 50,
+                size: 75,
               ),
             ),
           ),
@@ -238,7 +238,7 @@ class _LedMatrixState extends State<LedMatrix> {
               width: 100,
               child: Icon(
                 Icons.arrow_drop_down_sharp,
-                size: 50,
+                size: 75,
               ),
             ),
           ),
@@ -253,8 +253,8 @@ class _LedMatrixState extends State<LedMatrix> {
         centerTitle: true,
       ),
       body: Container(
-        color: Colors.purple[100],
-        margin: const EdgeInsets.all(10.0),
+        color: Colors.red[200],
+        padding: const EdgeInsets.symmetric(horizontal: 20.0),
         child: Column(
           children: [
             Expanded(child: Container()),
@@ -266,6 +266,13 @@ class _LedMatrixState extends State<LedMatrix> {
                 Container(
                   padding: const EdgeInsets.all(50.0),
                   decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black,
+                        blurRadius: 50.0,
+                        spreadRadius: 1.0,
+                      ),
+                    ],
                     border: Border.all(color: Colors.white, width: 10.0),
                     color: Colors.black,
                   ),
